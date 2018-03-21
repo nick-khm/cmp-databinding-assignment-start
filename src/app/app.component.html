@@ -18,8 +18,8 @@
 
 App counter: {{ app_counter }}
 <app-game-control (onCounterChanged)="doOnCounterChanged($event)">
-  <div *ngFor="let item of items;let isOdd=odd;let isEven=even">
-    <app-even *ngIf="isEven"></app-even>
-    <app-odd *ngIf="isOdd"></app-odd>
+  <div *ngFor="let item of items">
+    <app-odd *ngIf="(item % 2) !== 0"></app-odd>
+    <app-even *ngIf="(item % 2) === 0"></app-even>
   </div>
 </app-game-control>

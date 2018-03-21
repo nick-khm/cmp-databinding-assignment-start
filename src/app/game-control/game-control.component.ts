@@ -5,16 +5,10 @@ import {Component, EventEmitter, OnInit, Output} from "@angular/core";
   templateUrl: "./game-control.component.html",
   styleUrls: ["./game-control.component.css"]
 })
-export class GameControlComponent implements OnInit {
+export class GameControlComponent {
   public inc = 0;
   private ref;
   @Output() onCounterChanged = new EventEmitter<any>();
-
-  constructor() {
-  }
-
-  ngOnInit() {
-  }
 
   startGame() {
     this.ref = setInterval(() => {

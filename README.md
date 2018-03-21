@@ -1,4 +1,4 @@
-# Assignment 4: Practicing Property & Event Binding and View Encapsulatio
+# Assignment 4: Practicing Property & Event Binding and View Encapsulation
 <ol>
   <li>Create three new components: GameControl, Odd and Even</li>
   <li>The GameControl Component should have buttons to start and stop the game</li>
